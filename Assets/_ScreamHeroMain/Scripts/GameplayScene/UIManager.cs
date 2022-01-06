@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button PauseButtonRef;
     [SerializeField] private Button ResumeButtonRef;
     [SerializeField] private Button ReplayButtonRef;
+    [SerializeField] private Button ReturnToMenuButtonRef;
     [SerializeField] private Image PausePopupRef;
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class UIManager : MonoBehaviour
         PauseButtonRef.onClick.AddListener(PauseButtonPressed);
         ResumeButtonRef.onClick.AddListener(ResumeButtonPressed);
         ReplayButtonRef.onClick.AddListener(ReplayButtonPressed);
+        ReturnToMenuButtonRef.onClick.AddListener(ReturnToMenuButtonPressed);
     }
 
     // Update is called once per frame
@@ -32,6 +34,11 @@ public class UIManager : MonoBehaviour
         GameConstants.Activate = true;
     }
     public void ReplayButtonPressed()
+    {
+        GameConstants.Activate = true;
+        SceneManager.LoadScene(1);
+    }
+    public void ReturnToMenuButtonPressed()
     {
         GameConstants.Activate = true;
         SceneManager.LoadScene(0);
