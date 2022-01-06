@@ -736,7 +736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &630655114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   PauseButtonRef: {fileID: 239564169}
   ResumeButtonRef: {fileID: 1473482142}
   ReplayButtonRef: {fileID: 1589413626}
-  ReturnToMenuButtonRef: {fileID: 0}
+  ReturnToMenuButtonRef: {fileID: 109107304}
   PausePopupRef: {fileID: 630655115}
 --- !u!1 &1234110662
 GameObject:
